@@ -5,7 +5,9 @@ var express = require ('express')
 var hbs = require ('hbs')
 var geocode = require ('./utils/geocode')
 var forecast = require ('./utils/forecast')
+
 var app = express()
+var port = process.env.PORT || 3000
 
 var staticPath = path.join (__dirname, '../public')
 var viewPath = path.join (__dirname, '../templates/views')
@@ -92,6 +94,6 @@ app.get ('*', (req, res) => {
 })
 
 
-app.listen (3100, () => {
-    console.log ('Server running at port 3100')
+app.listen (port, () => {
+    console.log ('Server running at port ' + port)
 })
