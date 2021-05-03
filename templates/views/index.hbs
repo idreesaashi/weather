@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <link rel="icon" href="./img/girl.gif">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get the Weather Infor</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="weather-content"></p>
+    </div>
+    {{>footer}}
+    <script src="./js/clientside.js"></script>    
+</body>
+</html>
