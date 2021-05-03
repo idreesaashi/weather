@@ -71,12 +71,6 @@ app.get ('/weather', (req, res) => {
         })
 
     }) 
-    // res.send(
-    //     {
-    //         location:req.query.address
-    //     }
-    // )
-    //res.send ('Weather Page will be plugged in here')
 })
 
 app.get ('/help/*', (req, res) => {
